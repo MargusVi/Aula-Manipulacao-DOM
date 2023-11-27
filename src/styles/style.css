@@ -91,7 +91,7 @@ mark {
 }
 
 code {
-    display: inline-block;
+    display: block;
     flex-direction: column;
     flex-wrap: wrap;
     margin: 3rem 2rem;
@@ -103,6 +103,8 @@ code {
     max-width: 100%;
     overflow: auto;
     word-wrap: break-word;
+    justify-content: center;
+    align-items: center;
 }
 
 .destaque {
