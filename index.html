@@ -47,13 +47,14 @@
                             <span id="getID">EXEMPLO</span><br>
                         </div>
 
-                        <code>
-                            <strong>HTML</strong><br>
-                            &lt;span id="getID"&gt;EXEMPLO&lt;/span&gt;<br><br>
-
-                            <strong>Tente você</strong><br>
-                            document.getElementById("getID")<br>
-                        </code>
+                        <div class="codigo">
+                            <code>
+                                <strong>HTML</strong><br>
+                                &lt;<span class="tag">span</span> <span class="idClass">id</span>=<span class="string">"getID"</span>&gt;EXEMPLO&lt;<span class="tag">/span</span>&gt;<br><br>
+                                <strong>Tente você</strong><br>
+                                document.<span class="metodo">getElementById</span>(<span class="string">"getID"</span>)<br>
+                            </code>
+                        </div>
                     </div>
                 </li>
 
@@ -67,23 +68,25 @@
                             <span class="getClass">EXEMPLO</span><br>
                         </div>
 
-                        <code>
-                            <strong>HTML</strong><br>
-                            &lt;span class="getClass"&gt;EXEMPLO&lt;/span&gt;<br><br>
-
-                            <strong>Tente você</strong><br>
-                            document.getElementsByClassName("getClass")<br>
-                        </code><br>
+                        <div class="codigo">
+                            <code>
+                                <strong>HTML</strong><br>
+                                &lt;<span class="tag">span</span> <span class="idClass">class</span>=<span class="string">"getClass"</span>&gt;EXEMPLO&lt;<span class="tag">/span</span>&gt;<br><br>
+                                <strong>Tente você</strong><br>
+                                document.<span class="metodo">getElementsByClassName</span>(<span class="string">"getClass"</span>)<br>
+                            </code><br>
+                        </div>
 
                         Retorna um <span class="destaque">HTML Collection</span>, pois vários elementos podem ter a mesma classe.<br>
                         Pode ser manipulado de forma semelhante a um array.
 
-                        <code>
-                            <strong>Tente você</strong><br>
-                            let getClass = document.getElementsByClassName("getClass")<br><br>
-
-                            console.log(getClass[0])<br>
-                        </code>
+                        <div class="codigo">
+                            <code>
+                                <strong>Tente você</strong><br>
+                                <span class="tag">let</span> <span class="idClass">getClass</span> = document.<span class="metodo">getElementsByClassName</span>(<span class="string">"getClass"</span>)<br><br>
+                                console.<span class="metodo">log</span>(<span class="metodo">getClass</span>[<span class="num">0</span>])<br>
+                            </code>
+                        </div>
                     </div>
                 </li>
 
@@ -97,23 +100,25 @@
                             <mark>EXEMPLO</mark><br>
                         </div>
 
-                        <code>
-                            <strong>HTML</strong><br>
-                            &lt;mark&gt;EXEMPLO&lt;/mark&gt;<br><br>
-
-                            <strong>Tente você</strong><br>
-                            document.getElementsByTagName("mark")<br>
-                        </code><br>
+                        <div class="codigo">
+                            <code>
+                                <strong>HTML</strong><br>
+                                &lt;<span class="tag">mark</span>&gt;EXEMPLO&lt;<span class="tag">/mark</span>&gt;<br><br>
+                                <strong>Tente você</strong><br>
+                                document.<span class="metodo">getElementsByTagName</span>(<span class="string">"mark"</span>)<br>
+                            </code><br>
+                        </div>
 
                         Da mesma forma que com as classes, também retorna um <span class="destaque">HTML Collection</span>, pois vários elementos podem ter a mesma tag.<br>
                         Pode ser manipulado de forma semelhante a um array.
 
-                        <code>
-                            <strong>Tente você</strong><br>
-                            let getTag = document.getElementsByTagName("mark")<br><br>
-
-                            console.log(getTag[0])<br>
-                        </code>
+                        <div class="codigo">
+                            <code>
+                                <strong>Tente você</strong><br>
+                                <span class="tag">let</span> <span class="idClass">getTag</span> = document.<span class="metodo">getElementsByTagName</span>(<span class="string">"mark"</span>)<br><br>
+                                console.<span class="metodo">log</span>(<span class="metodo">getTag</span>[<span class="num">0</span>])<br>
+                            </code>
+                        </div>
                     </div>
                 </li>
 
@@ -123,14 +128,14 @@
                     <div class="explicacao">
                         Permite usar um seletor da mesma forma em que são usados dentro do CSS, ou seja, usando # para IDs, . para classes e a tag em si para tags.
 
-                        <code>
-                            <strong>Tente você</strong><br>
-                            document.querySelector("#getID")<br><br>
-
-                            document.querySelector(".getClass")<br><br>
-
-                            document.querySelector("mark")<br>
-                        </code>
+                        <div class="codigo">
+                            <code>
+                                <strong>Tente você</strong><br>
+                                document.<span class="metodo">querySelector</span>(<span class="string">"#getID"</span>)<br><br>
+                                document.<span class="metodo">querySelector</span>(<span class="string">".getClass"</span>)<br><br>
+                                document.<span class="metodo">querySelector</span>(<span class="string">"mark"</span>)<br>
+                            </code>
+                        </div>
                     </div>
                 </li>
 
@@ -140,22 +145,24 @@
                     <div class="explicacao">
                         Semelhante ao querySelector, mas o querySelector retorna apenas um elemento com aquelas características, enquanto o querySelectorAll retorna todos os elementos com aquelas características.<br>
 
-                        <code>
-                            <strong>Tente você</strong><br>
-                            document.querySelectorAll("h2")<br>
-                        </code><br>
+                        <div class="codigo">
+                            <code>
+                                <strong>Tente você</strong><br>
+                                document.<span class="metodo">querySelectorAll</span>(<span class="string">"h2"</span>)<br>
+                            </code><br>
+                        </div>
 
                         Retorna um <strong class="destaque">NodeList</strong>, já que podem ser retornados vários elementos.<br>
                         Pode ser manipulado de forma semelhante a um array.
 
-                        <code>
-                            <strong>Tente você</strong><br>
-                            let selectAll = document.querySelectorAll("h2")<br><br>
-
-                            console.log(selectAll[0])<br><br>
-
-                            console.log(selectAll[1])<br><br>
-                        </code>
+                        <div class="codigo">
+                            <code>
+                                <strong>Tente você</strong><br>
+                                <span class="tag">let</span> <span class="idClass">selectAll</span> = document.<span class="metodo">querySelectorAll</span>(<span class="string">"h2"</span>)<br><br>
+                                console.<span class="metodo">log</span>(<span class="metodo">selectAll</span>[<span class="num">0</span>])<br><br>
+                                console.<span class="metodo">log</span>(<span class="metodo">selectAll</span>[<span class="num">1</span>])<br><br>
+                            </code>
+                        </div>
                     </div>
                 </li>
             </ul>
@@ -175,15 +182,15 @@
                             <span class="textContent">EXEMPLO</span><br>
                         </div>
 
-                        <code>
-                            <strong>HTML</strong><br>
-                            &lt;span class="textContent"&gt;EXEMPLO&lt;/span&gt;<br><br>
-
-                            <strong>Tente você</strong>
-                            let texto = document.querySelector(".textContent")<br><br>
-
-                            texto.textContent<br>
-                        </code>
+                        <div class="codigo">
+                            <code>
+                                <strong>HTML</strong><br>
+                                &lt;<span class="tag">span</span> <span class="idClass">class</span>=<span class="string">"textContent"</span>&gt;EXEMPLO&lt;<span class="tag">/span</span>&gt;<br><br>
+                                <strong>Tente você</strong><br>
+                                <span class="tag">let</span> <span class="idClass">texto</span> = document.<span class="metodo">querySelector</span>(<span class="string">".textContent"</span>)<br><br>
+                                <span class="idClass">texto</span>.<span class="metodo">textContent</span><br>
+                            </code>
+                        </div>
                     </div>
                 </li>
 
@@ -198,17 +205,16 @@
                             <span class="innerText">EXEMPLO</span><br>
                         </div>
 
-                        <code>
-                            <strong>HTML</strong><br>
-                            &lt;span class="innerText"&gt;EXEMPLO&lt;/span&gt;<br><br>
-
-                            <strong>Tente você</strong><br>
-                            texto = document.querySelector(".innerText")<br><br>
-
-                            texto.innerText = "TESTE"<br><br>
-
-                            texto.textContent<br>
-                        </code>
+                        <div class="codigo">
+                            <code>
+                                <strong>HTML</strong><br>
+                                &lt;<span class="tag">span</span> <span class="idClass">class</span>=<span class="string">"innerText"</span>&gt;EXEMPLO&lt;<span class="tag">/span</span>&gt;<br><br>
+                                <strong>Tente você</strong><br>
+                                <span class="idClass">texto</span> = document.<span class="metodo">querySelector</span>(<span class="string">".innerText"</span>)<br><br>
+                                <span class="idClass">texto</span>.<span class="metodo">innerText</span> = <span class="string">"TESTE"</span><br><br>
+                                <span class="idClass">texto</span>.<span class="metodo">textContent</span><br>
+                            </code>
+                        </div>
                     </div>
                 </li>
 
@@ -222,19 +228,17 @@
                             <span class="innerHTML">EXEMPLO</span><br>
                         </div>
 
-                        <code>
-                            <strong>HTML</strong><br>
-                            &lt;span class="innerHTML"&gt;EXEMPLO&lt;/span&gt;<br><br>
-
-                            <strong>Tente você</strong><br>
-                            texto = document.querySelector(".innerHTML")<br><br>
-
-                            texto.innerHTML<br><br>
-
-                            texto.innerHTML = "&LT;h1&GT;TESTE&LT;/h1&GT;"<br><br>
-
-                            texto.innerHTML<br>
-                        </code>
+                        <div class="codigo">
+                            <code>
+                                <strong>HTML</strong><br>
+                                &lt;<span class="tag">span</span> <span class="idClass">class</span>=<span class="string">"innerHTML"</span>&gt;EXEMPLO&lt;<span class="tag">/span</span>&gt;<br><br>
+                                <strong>Tente você</strong><br>
+                                <span class="idClass">texto</span> = document.<span class="metodo">querySelector</span>(<span class="string">".innerHTML"</span>)<br><br>
+                                <span class="idClass">texto</span>.<span class="metodo">innerHTML</span><br><br>
+                                <span class="idClass">texto</span>.<span class="metodo">innerHTML</span> = <span class="string">"&LT;h1&GT;TESTE&LT;/h1&GT;"</span><br><br>
+                                <span class="idClass">texto</span>.<span class="metodo">innerHTML</span><br>
+                            </code>
+                        </div>
                     </div>
                 </li>
             </ul>
@@ -254,15 +258,15 @@
                             <span class="styleProperty">EXEMPLO</span><br>
                         </div>
 
-                        <code>
-                            <strong>HTML</strong><br>
-                            &lt;span class="styleProperty"&gt;EXEMPLO&lt;/span&gt;<br><br>
-
-                            <strong>Tente você</strong><br>
-                            let estilo = document.querySelector(".styleProperty")<br><br>
-
-                            estilo.style.backgroundColor = "blue"<br>
-                        </code>
+                        <div class="codigo">
+                            <code>
+                                <strong>HTML</strong><br>
+                                &lt;<span class="tag">span</span> <span class="idClass">class</span>=<span class="string">"styleProperty"</span>&gt;EXEMPLO&lt;<span class="tag">/span</span>&gt;<br><br>
+                                <strong>Tente você</strong><br>
+                                <span class="tag">let</span> <span class="idClass">estilo</span> = document.<span class="metodo">querySelector</span>(<span class="string">".styleProperty"</span>)<br><br>
+                                <span class="idClass">estilo</span>.<span class="metodo">style</span>.<span class="metodo">backgroundColor</span> = <span class="string">"blue"</span><br>
+                            </code>
+                        </div>
                     </div>
                 </li>
 
@@ -284,15 +288,15 @@
                                     <span class="addClass">EXEMPLO</span><br>
                                 </div>
         
-                                <code>
-                                    <strong>HTML</strong><br>
-                                    &lt;span class="addClass"&gt;EXEMPLO&lt;/span&gt;<br><br>
-    
-                                    <strong>Tente você</strong><br>
-                                    let add = document.querySelector(".addClass")<br><br>
-    
-                                    add.classList.add("topico")<br>
-                                </code>
+                                <div class="codigo">
+                                    <code>
+                                        <strong>HTML</strong><br>
+                                        &lt;<span class="tag">span</span> <span class="idClass">class</span>=<span class="string">"addClass"</span>&gt;EXEMPLO&lt;<span class="tag">/span</span>&gt;<br><br>
+                                        <strong>Tente você</strong><br>
+                                        <span class="tag">let</span> <span class="idClass">add</span> = document.<span class="metodo">querySelector</span>(<span class="string">".addClass"</span>)<br><br>
+                                        <span class="idClass">add</span>.<span class="metodo">classList</span>.<span class="metodo">add</span>(<span class="string">"topico"</span>)<br>
+                                    </code>
+                                </div>
                             </div>
                         </li>
 
@@ -306,15 +310,15 @@
                                     <span class="outline">EXEMPLO</span><br>
                                 </div>
         
-                                <code>
-                                    <strong>HTML</strong><br>
-                                    &lt;span class="outline"&gt;EXEMPLO&lt;/span&gt;<br><br>
-    
-                                    <strong>Tente você</strong><br>
-                                    let remove = document.querySelector(".outline")<br><br>
-    
-                                    add.classList.remove("outline")<br>
-                                </code>
+                                <div class="codigo">
+                                    <code>
+                                        <strong>HTML</strong><br>
+                                        &lt;<span class="tag">span</span> <span class="idClass">class</span>=<span class="string">"outline"</span>&gt;EXEMPLO&lt;<span class="tag">/span</span>&gt;<br><br>
+                                        <strong>Tente você</strong><br>
+                                        <span class="tag">let</span> <span class="idClass">remove</span> = document.<span class="metodo">querySelector</span>(<span class="string">".outline"</span>)<br><br>
+                                        <span class="idClass">remove</span>.<span class="metodo">classList</span>.<span class="metodo">remove</span>(<span class="string">"outline"</span>)<br>
+                                    </code>
+                                </div>
                             </div>
                         </li>
                         </li>
@@ -332,17 +336,21 @@
                     <div class="explicacao">
                         Permite criar novos elementos.<br>
 
-                        <code>
-                            <strong>Tente você</strong><br>
-                            let novoElemento = document.createElement("img")<br>
-                        </code>
+                        <div class="codigo">
+                            <code>
+                                <strong>Tente você</strong><br>
+                                <span class="tag">let</span> <span class="idClass">novoElemento</span> = document.<span class="metodo">createElement</span>(<span class="string">"img"</span>)<br>
+                            </code>
+                        </div>
 
                         Após criado, é possível fazer modificações no elemento.
 
-                        <code>
-                            <strong>Tente você</strong><br>
-                            novoElemento.src = "src/images/JavaScript-logo.png"<br>
-                        </code>
+                        <div class="codigo">
+                            <code>
+                                <strong>Tente você</strong><br>
+                                <span class="idClass">novoElemento</span>.<span class="metodo">src</span> = <span class="string">"src/images/JavaScript-logo.png"</span><br>
+                            </code>
+                        </div>
                     </div>
                 </li>
             </ul>
@@ -357,17 +365,21 @@
                     <div class="explicacao">
                         Permite inserir o elemento criado na página após o elemento usado como base.<br>
 
-                        <code>
-                            <strong>Tente você</strong><br>
-                            document.getElementById("append").append(novoElemento)<br>
-                        </code>
+                        <div class="codigo">
+                            <code>
+                                <strong>Tente você</strong><br>
+                                document.<span class="metodo">getElementById</span>(<span class="string">"append"</span>).<span class="metodo">append</span>(<span class="idClass">novoElemento</span>)<br>
+                            </code>
+                        </div>
 
                         Após ser inserido, ainda assim é possível fazer modificações no elemento.<br>
 
-                        <code>
-                            <strong>Tente você</strong><br>
-                            novoElemento.width = 250<br>
-                        </code>
+                        <div class="codigo">
+                            <code>
+                                <strong>Tente você</strong><br>
+                                <span class="idClass">novoElemento</span>.<span class="metodo">width</span> = <span class="num">250</span><br>
+                            </code>
+                        </div>
                     </div>
                 </li>
                 
@@ -377,10 +389,12 @@
                     <div class="explicacao">
                         Permite inserir o elemento criado na página antes do elemento usado como base.<br>
 
-                        <code>
-                            <strong>Tente você</strong><br>
-                            document.getElementById("prepend").prepend(novoElemento)<br>
-                        </code>
+                        <div class="codigo">
+                            <code>
+                                <strong>Tente você</strong><br>
+                                document.<span class="metodo">getElementById</span>(<span class="string">"prepend"</span>).<span class="metodo">prepend</span>(<span class="idClass">novoElemento</span>)<br>
+                            </code>
+                        </div>
                     </div>
                 </li>
             </ul>
