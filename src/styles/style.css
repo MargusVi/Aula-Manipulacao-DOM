@@ -1,5 +1,5 @@
 body {
-    background-color: #000000;
+    background: linear-gradient(to right, rgb(0, 0, 35), black 2%, 98%, rgb(0, 0, 35));
     color: #ffffff;
     font-size: 2.3rem;
 }
@@ -9,7 +9,6 @@ h2 {
     color: #33A8DB;
     font-weight: bold;
     letter-spacing: 4px;
-    text-transform: uppercase;
     margin-bottom: 4rem;
 }
 
@@ -32,7 +31,6 @@ h1 {
     text-align: center;
     font-size: 5.5rem;
     font-weight: 900;
-    text-transform: uppercase;
     color: transparent;
     background: -webkit-linear-gradient(#33A8DB, #1472B7);
     background-clip: text;
