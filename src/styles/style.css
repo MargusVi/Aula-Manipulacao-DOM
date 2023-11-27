@@ -54,6 +54,12 @@ li {
     font-size: 3rem;
 }
 
+figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 img {
     height: 50vw;
     background: linear-gradient(#2e2e2e, #808080 95%, #2e2e2e);
